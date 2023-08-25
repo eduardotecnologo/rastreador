@@ -1,0 +1,19 @@
+GET http://127.0.0.1:3000/prefixo
+
+###
+GET http://127.0.0.1:3000/routes
+
+###
+POST http://127.0.0.1:3000/routes
+Content-Type: application/json
+
+{
+    "name":"route test 1",
+    "source_id":"1",
+    "destination_id":"2"
+}
+
+### Find Maps
+
+### Get place_id
+GET http://127.0.0.1:3000/places?text=Rua Sylvio Ribeiro Aragão, Juiz de Fora 
